@@ -7,19 +7,35 @@ body{
     /*background-color:rgb(64 68 120 / 90%)*/
     /*background-color: rgb(181 186 253 / 90%);*/
     /*background-image: url("yo.jpg");*/
-    background-color: rgb(0 0 0 / 90%);
+    /*background-color: rgb(0 0 0 / 90%);*/
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 header{
     /*background-color: rgb(0 0 0 / 80%);*/
+    font-size: 1em;
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: auto;
+    box-shadow: 0 4px 8px 0 rgb(239 214 44 / 20%), 0 6px 20px 0 rgb(255 255 255 / 19%);
+    transition: box-shadow 0.3s;
+}
+
+header:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
 
 }
 
+.logo{
+    cursor: pointer;
+}
+
 .header-text{
+    font-size: 1rem;
     font-family: 'Shadows Into Light';
+    letter-spacing: 0.1rem;
     color: white;
     width: 25%;
     height: auto;
@@ -45,8 +61,9 @@ header{
     list-style: none;
     color: rgb(255 255 255 / 80%);
     font-family: 'Kdam Thmor Pro', sans-serif;
-    padding: 0 20px 0 0;
+    padding: 0;
     justify-content: center;
+    align-items: center;
     width: 100%;
     border-left: 1px solid #FFF79A;
     border-right: 1px solid #FFF79A;
@@ -97,7 +114,7 @@ header{
 .secciones{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 100%;
     margin: auto;
     height: 100vh;
     /*border-left: 5px solid #FFF79A;
@@ -112,21 +129,61 @@ header{
     padding-top: 9px;
 }
 
-.secciones > div img{
+#tarjeta{
     width: 80%;
-    height: 100%;
+    height: fit-content;
     /*border-radius: 60px;*/
    /* padding-top: 10px;*/
    transition: box-shadow, width 0.1s;
 }
 
-.secciones > div img:hover{
+#tarjeta:hover{
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
     width: 100%;
 }
 
+form{
+    max-width: 400px;
+}
+
+.form_container{
+    display: grid;
+    grid-gap: 1em;
+    width: 50%;
+    margin: auto;
+
+}
+
+.form_container input, .form_container textarea{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 10px;
+    
+}
+
+.form_input-message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 1.5em;
+}
+
+.form-submit{
+    color: #bdf7ce !important;;
+}
+
+.form-submit:hover{
+    background-color: white;
+    color:black !important;
+    cursor: pointer;
+    font-weight: 700;
+}
+
 #contenedor_texto{
-    width: 100%;
+    width: 50%;
+    margin: auto;
     padding: 50px 75px 0 75px;
     /*text-align: center;
     background-color: rgb(233 228 171);*/
@@ -162,6 +219,8 @@ header{
 #contact_section{
     display: none;
     text-align: center;
+    width: 50%;
+    margin: auto;
 }
 
 .back-text{
@@ -171,6 +230,16 @@ header{
     text-align: center;
     color: white;
     margin-bottom: 15px;
+}
+
+.stack_icons_container{
+    width: 40px;
+    height: auto;
+}
+
+.stack_icons{
+    width: 2em;
+    height: inherit;
 }
 
 footer{
@@ -185,7 +254,7 @@ footer{
 @media screen and (max-width: 720px){
 
     .nav{
-        font-size: 8px;
+        font-size: 0.8rem;
     }
 
     .typed, .typed-cursor{
@@ -193,6 +262,14 @@ footer{
     }
     #contenedor_texto{
         padding: 25px 35px 0 35px;
+    }
+
+ /*   #contact_section{
+        display: block !important;
+    }
+*/
+    .form_container{
+        width: auto;
     }
 
 }

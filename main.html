@@ -16,25 +16,43 @@
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body onload="escritura()">
 
     <header>
            <!-- <ul class="name">
                 <li>Javier</li>
                 <li>Elias</li>
                 <li>Jatar</li>-->
-            <ul class="header-text">Javier Jatar González</ul>
+            <ul class="header-text" onclick="location.reload()"><li><a class="logo">Javier Jatar</a></li></ul>
             <ul class="nav">
-                <li><a id="about_me" onclick="escritura()">About me</a></li>
+                <!--<li><a id="about_me">About me</a></li>-->
                 <li><a>Portfolio</a></li>
                 <li><a id="contact">Contact</a></li>
             </ul>
             <ul class="header-text">1997</ul> 
     </header>
     <div class="secciones">
+        <div class="stack_icons_container">
+            <img class="stack_icons" src="stack_icons/bootstrap.png" alt="">
+            <img class="stack_icons" src="stack_icons/html-5.png" alt="">
+            <img class="stack_icons" src="stack_icons/css-3.png" alt="">
+            <img class="stack_icons" src="stack_icons/js.png" alt="">
+            <img class="stack_icons" src="stack_icons/php.png" alt="">
+            <img class="stack_icons" src="stack_icons/yii.png" alt="">
+            <img class="stack_icons" src="stack_icons/wordpress.png" alt="">
+        </div>
         <!--<section id="seccion1"></section>-->
-            <div id="contenedor_texto" style="display:none"></div>
-            <div id="contact_section"><p class="back-text">I present to you my <span style="color: #bdf7ce; background-color: black;">'super business card'</span>, it is an image... so you can save it.</p><img id="tarjeta" src="23655.jpg" alt=""></div>
+            <div id="contenedor_texto" onload="escritura()"></div>
+            <div id="contact_section"><div><p class="back-text"><span style="color: #bdf7ce; background-color: black;">'Super business card'</span>: it is an image... so you can save it.</p><img id="tarjeta" src="23655.jpg" alt=""></div>
+            <form action="https://formspree.io/f/xyyoqjoz" method="POST">
+                <div class="form_container">
+                <input type="text" name="name" id="" placeholder="Name" autofocus>
+                <input type="text" name="surname" id="" placeholder="Surname">
+                <input type="email" name="_replyto" placeholder="Email">
+                <textarea class="form_input-message" name="message" id="" cols="30" rows="10"></textarea>
+                <input class="form-submit" type="submit" value="Send">
+            </form></div>
+            </div>
             <div class="caja_vacia"></div>
     </div>
 
