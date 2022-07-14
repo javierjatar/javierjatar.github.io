@@ -1,6 +1,8 @@
 *{  
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-decoration: none;
 }
 
 body{
@@ -25,16 +27,18 @@ header:hover{
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
-
-}
-
 .logo{
     cursor: pointer;
+    font-family: 'Shadows Into Light' !important;
+    transition: letter-spacing, 0.5s;
 }
 
+.logo:hover{
+    letter-spacing: 0.8rem;
+}
 .header-text{
     font-size: 1rem;
-    font-family: 'Shadows Into Light';
+    font-family: 'Shadows Into Light' !important;
     letter-spacing: 0.1rem;
     color: white;
     width: 25%;
@@ -149,8 +153,8 @@ form{
 .form_container{
     display: grid;
     grid-gap: 1em;
-    width: 50%;
-    margin: auto;
+    /*width: 50%;
+    margin: auto;*/
 
 }
 
@@ -194,6 +198,23 @@ form{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-shadow: 2px 4px white;*/
 
+}
+
+#contenedor_portfolio{
+    display: none;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    height: 50%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    overflow: auto;
+}
+
+.works-done{
+    height: 50%;
+    margin: auto;
+    border: 1px solid white;
 }
 
 .caja_vacia{

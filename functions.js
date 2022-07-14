@@ -2,6 +2,8 @@ const contenedor_texto =  document.getElementById("contenedor_texto");
 const tarjeta = document.getElementById("tarjeta");
 const contact_link = document.getElementById("contact");
 const contact_section = document.getElementById("contact_section");
+const contenedor_portfolio = document.getElementById("contenedor_portfolio");
+const portfolio_link = document.getElementById("portfolio_link");
 var cont = 0;
 
 /*window.addEventListener("resize", function(){
@@ -13,7 +15,6 @@ var cont = 0;
         console.log(screen.width);
     }
 })*/
-
 function escritura(){
     cont++;
     console.log(cont);
@@ -50,15 +51,28 @@ function escritura(){
 
 }
 
-contact_link.addEventListener("click", function(e){
+portfolio_link.addEventListener("click", function(){
+    
+    console.log("click");
+    contact_section.style.display = "none";
     contenedor_texto.style.display = "none";
-    if(screen.width <= 720){
+    contenedor_portfolio.style.display = "block";
+
+
+})
+
+contact_link.addEventListener("click", function(e){
+    contenedor_portfolio.style.display = "none";
+    contenedor_texto.style.display = "none";
+        if(screen.width <= 720){
         contact_section.style.display = "block";
         console.log(screen.width);
     }else if(screen.width > 720){
         contact_section.style.display = "flex";
         console.log(screen.width);
-    }
+    } 
+    
+
     e.target.removeEventListener(e.type, escritura);
 
 })
