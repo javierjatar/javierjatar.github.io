@@ -4,6 +4,7 @@ const contact_link = document.getElementById("contact");
 const contact_section = document.getElementById("contact_section");
 const contenedor_portfolio = document.getElementById("contenedor_portfolio");
 const portfolio_link = document.getElementById("portfolio_link");
+const prueba = document.getElementById("prueba");
 var cont = 0;
 
 /*window.addEventListener("resize", function(){
@@ -30,10 +31,10 @@ function escritura(){
     document.getElementById('contenedor_texto').appendChild(span);
     document.getElementById('contenedor_texto').firstChild.classList.add("typed");
     const typed = new Typed('.typed', {
-        strings: [
+        /*strings: [
             'HOLA, SOY JAVIER :) ...<BR> TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES WEB. ESTOY UN POCO OBSESIONADO DE QUE TODO ENCAJE A LA PERFECCIÓN... QUIZÁ EN LA VIDA REAL ESTO NO ES TAN CONVENIENTE, PERO... EN EL DISEÑO Y DESARROLLO DE SITIOS WEB, ES UN PUNTO A FAVOR. <br><br><br><div class="servicios">SERVICIOS<br>- Desarrollo y diseño web personalizado<br>- Posicionamiento SEO<br>- Integración de API\'S</div><div class="valores">VALORES<br>- Compromiso<br>- Coherencia<br>- Paciencia</div><div class="tecnologias">TECNOLOGÍAS<br>- HTML<br>- CCS<br>- JAVASCRIPT<br>- BOOTSTRAP<br>- PHP<br>- YII FRAMEWORK</div>',
-        ],
-        stringsElement: '#contenedor-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+        ],*/
+        stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
         typeSpeed: 30, // Velocidad en mlisegundos para poner una letra,
         startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
         backSpeed: 20, // Velocidad en milisegundos para borrrar una letra,
@@ -54,6 +55,7 @@ function escritura(){
 portfolio_link.addEventListener("click", function(){
     
     console.log("click");
+    prueba.style.display = "none";
     contact_section.style.display = "none";
     contenedor_texto.style.display = "none";
     contenedor_portfolio.style.display = "block";
@@ -62,6 +64,7 @@ portfolio_link.addEventListener("click", function(){
 })
 
 contact_link.addEventListener("click", function(e){
+    prueba.style.display = "none";
     contenedor_portfolio.style.display = "none";
     contenedor_texto.style.display = "none";
         if(screen.width <= 720){

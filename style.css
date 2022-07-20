@@ -198,17 +198,20 @@ form{
 }
 
 #contenedor_texto{
-    width: 50%;
+    width: 100%;
     margin: auto;
     padding: 50px 283px 50px 75px;
-    height: auto;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    height: 100%;
     background-color: #00000075;
+    overflow: auto;
     /*border-radius: 0 0 10px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-shadow: 2px 4px white;*/
 
+}
+
+.apartados{
+    height: 100%;
 }
 
 .servicios{
@@ -220,6 +223,7 @@ form{
     /*width: fit-content;*/
     padding: 0.5rem;
     text-align: center;
+    height: 33.33%;
     
 }
 
@@ -315,8 +319,8 @@ form{
     /*font-family: 'Shadows Into Light', cursive;*/
     font-family: 'Kdam Thmor Pro', sans-serif;
     text-align: center;
-    color: white;
-    margin-bottom: 15px;
+    align-self: center;
+
 }
 
 .stack_icons_container{
@@ -331,11 +335,22 @@ form{
 
 footer{
     /*background-color: rgb(255 247 154 / 10%);*/
-    width: 50%;
     height: 27px;
     margin: auto;
     border-left: 1px solid #FFF79A;
     border-right: 1px solid #FFF79A;
+}
+
+.social-media{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.social-media > li > p {
+    font-size: 0.8rem;
+    color: #841616;;
 }
 
 @media screen and (max-width: 720px){
@@ -361,7 +376,7 @@ footer{
 
     #contenedor_texto, #contenedor_portfolio{
         width: 100%;
-        height: 100%;
+        height: 33.33%;
         padding: 40px;
         font-size: 0.8rem;
     }
