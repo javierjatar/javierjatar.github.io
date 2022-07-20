@@ -211,6 +211,30 @@ form{
 
 }
 
+.servicios{
+    background-color: #00000085;
+}
+
+.servicios, .valores, .tecnologias{
+    /*border: 3px solid red;
+    /*width: fit-content;*/
+    padding: 0.5rem;
+    text-align: center;
+    
+}
+
+.valores{
+    background-color: #00808085;
+    /*border: 3px solid teal;*/
+}
+
+.tecnologias{
+    background-color: #ed143d59;
+}
+
+
+
+
 #contenedor_portfolio{
     display: none;
     width: 50%;

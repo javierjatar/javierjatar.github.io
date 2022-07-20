@@ -31,7 +31,7 @@ function escritura(){
     document.getElementById('contenedor_texto').firstChild.classList.add("typed");
     const typed = new Typed('.typed', {
         strings: [
-            'HOLA, SOY JAVIER :) ...<BR> TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES WEB. ESTOY UN POCO OBSESIONADO DE QUE TODO ENCAJE A LA PERFECCIÓN... QUIZÁ EN LA VIDA REAL ESTO NO ES TAN CONVENIENTE, PERO... EN EL DISEÑO Y DESARROLLO DE SITIOS WEB, ES UN PUNTO A FAVOR. ',
+            'HOLA, SOY JAVIER :) ...<BR> TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES WEB. ESTOY UN POCO OBSESIONADO DE QUE TODO ENCAJE A LA PERFECCIÓN... QUIZÁ EN LA VIDA REAL ESTO NO ES TAN CONVENIENTE, PERO... EN EL DISEÑO Y DESARROLLO DE SITIOS WEB, ES UN PUNTO A FAVOR. <br><br><br><div class="servicios">SERVICIOS<br>- Desarrollo y diseño web personalizado<br>- Posicionamiento SEO<br>- Integración de API\'S</div><div class="valores">VALORES<br>- Compromiso<br>- Coherencia<br>- Paciencia</div><div class="tecnologias">TECNOLOGÍAS<br>- HTML<br>- CCS<br>- JAVASCRIPT<br>- BOOTSTRAP<br>- PHP<br>- YII FRAMEWORK</div>',
         ],
         stringsElement: '#contenedor-texto', // ID del elemento que contiene cadenas de texto a mostrar.
         typeSpeed: 30, // Velocidad en mlisegundos para poner una letra,
