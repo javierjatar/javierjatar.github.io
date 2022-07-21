@@ -7,6 +7,39 @@ const portfolio_link = document.getElementById("portfolio_link");
 const apartados = document.getElementById("apartados");
 var cont = 0;
 
+function myMove() {
+    let id = null;
+    const elements = document.getElementsByClassName("animate");
+    let pos = 0;
+    let cont;
+    clearInterval(id);
+    id = setInterval(frame, 12);
+    function frame() {
+      if (pos == 51) {
+        pos--;
+        for(cont = 0; cont < elements.length; cont++){
+            elements[cont].style.top = pos + '%';
+            if(pos == 35){
+                pos++;
+                for(cont = 0; cont < elements.length; cont++){
+                elements[cont].style.top = pos + '%';
+                if(pos == 50){
+                    clearInterval(id);
+                }
+                }
+            }
+        }
+        clearInterval(id);
+      } else {
+        pos++;
+        for(cont = 0; cont < elements.length; cont++){
+        elements[cont].style.top = pos + '%';
+        }
+
+      }
+    }
+  }
+
 /*window.addEventListener("resize", function(){
     if(screen.width <= 720){
         contact_section.style.display = "block";
@@ -50,10 +83,13 @@ function escritura(){
 
     }
 
+    myMove();
     /*const collection = document.getElementsByClassName("apartados-icons");
     for (let i = 0; i < collection.length; i++) {
     collection[i].style.display = "block";*/
 }
+
+
 
 
 
