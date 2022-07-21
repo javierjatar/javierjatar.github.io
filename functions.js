@@ -4,7 +4,7 @@ const contact_link = document.getElementById("contact");
 const contact_section = document.getElementById("contact_section");
 const contenedor_portfolio = document.getElementById("contenedor_portfolio");
 const portfolio_link = document.getElementById("portfolio_link");
-const prueba = document.getElementById("prueba");
+const apartados = document.getElementById("apartados");
 var cont = 0;
 
 /*window.addEventListener("resize", function(){
@@ -54,8 +54,7 @@ function escritura(){
 
 portfolio_link.addEventListener("click", function(){
     
-    console.log("click");
-    prueba.style.display = "none";
+    apartados.style.display = "none";
     contact_section.style.display = "none";
     contenedor_texto.style.display = "none";
     contenedor_portfolio.style.display = "block";
@@ -64,7 +63,7 @@ portfolio_link.addEventListener("click", function(){
 })
 
 contact_link.addEventListener("click", function(e){
-    prueba.style.display = "none";
+    apartados.style.display = "none";
     contenedor_portfolio.style.display = "none";
     contenedor_texto.style.display = "none";
         if(screen.width <= 720){

@@ -210,8 +210,16 @@ form{
 
 }
 
-.apartados{
+#apartados{
     height: 100%;
+    overflow: auto;
+}
+
+.apartados-title{
+    color: white;
+    text-shadow: 2px 2px 4px #ffffff;
+    letter-spacing: 5px;
+
 }
 
 .servicios{
