@@ -50,7 +50,12 @@ function escritura(){
 
     }
 
+    /*const collection = document.getElementsByClassName("apartados-icons");
+    for (let i = 0; i < collection.length; i++) {
+    collection[i].style.display = "block";*/
 }
+
+
 
 portfolio_link.addEventListener("click", function(){
     
