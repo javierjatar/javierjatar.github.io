@@ -15,20 +15,7 @@ function myMove() {
     clearInterval(id);
     id = setInterval(frame, 12);
     function frame() {
-      if (pos == 51) {
-        pos--;
-        for(cont = 0; cont < elements.length; cont++){
-            elements[cont].style.top = pos + '%';
-            if(pos == 35){
-                pos++;
-                for(cont = 0; cont < elements.length; cont++){
-                elements[cont].style.top = pos + '%';
-                if(pos == 50){
-                    clearInterval(id);
-                }
-                }
-            }
-        }
+      if (pos == 50) {
         clearInterval(id);
       } else {
         pos++;
