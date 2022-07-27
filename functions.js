@@ -10,10 +10,15 @@ var cont = 0;
 /*function subMenu(){*/
     const apartados_title = document.getElementsByClassName("apartados-title");
     const sub_menus = document.getElementsByClassName("sub-menu");
+    console.log(sub_menus[0]);
+    console.log(sub_menus[1]);
+    console.log(sub_menus[2]);
+    console.log(sub_menus[3]);
+    console.log(sub_menus[4]);
     for(let i=0; i < apartados_title.length ; i++){
         apartados_title[i].addEventListener("click", function(){
-            apartados_title[i].lastElementChild.style.display = "block";
-            apartados_title[i].firstElementChild.style.top = "0%";
+            apartados_title[i].style.display = "none";
+            sub_menus[i].style.display = "block";
         })
     }
 /*}*/
