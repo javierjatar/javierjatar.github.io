@@ -7,20 +7,31 @@ const portfolio_link = document.getElementById("portfolio_link");
 const apartados = document.getElementById("apartados");
 var cont = 0;
 
+/*function subMenu(){*/
+    const apartados_title = document.getElementsByClassName("apartados-title");
+    const sub_menus = document.getElementsByClassName("sub-menu");
+    for(let i=0; i < apartados_title.length ; i++){
+        apartados_title[i].addEventListener("click", function(){
+            apartados_title[i].lastElementChild.style.display = "block";
+            apartados_title[i].firstElementChild.style.top = "0%";
+        })
+    }
+/*}*/
+
 function myMove() {
     let id = null;
     const elements = document.getElementsByClassName("animate");
-    let pos = 0;
+    let pos = 100;
     let cont;
     clearInterval(id);
-    id = setInterval(frame, 12);
+    id = setInterval(frame, 10);
     function frame() {
-      if (pos == 50) {
+      if (pos == 0) {
         clearInterval(id);
       } else {
-        pos++;
+        pos--;
         for(cont = 0; cont < elements.length; cont++){
-        elements[cont].style.top = pos + '%';
+        elements[cont].style.left = pos + '%';
         }
 
       }
@@ -56,7 +67,7 @@ function escritura(){
         ],*/
         stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
         typeSpeed: 30, // Velocidad en mlisegundos para poner una letra,
-        startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+        startDelay: 1200, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
         backSpeed: 20, // Velocidad en milisegundos para borrrar una letra,
         smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
         shuffle: false, // Alterar el orden en el que escribe las palabras.
@@ -75,6 +86,8 @@ function escritura(){
     for (let i = 0; i < collection.length; i++) {
     collection[i].style.display = "block";*/
 }
+
+
 
 
 
