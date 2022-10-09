@@ -261,7 +261,7 @@ form{
 }
 
 .servicios{
-    background-color: #00000085;
+    background-color: #000000c7;
 }
 
 .servicios, .valores, .tecnologias, .formacion{
@@ -277,17 +277,17 @@ form{
 }
 
 .valores{
-    background-color: #ed143d59;
+    background-color: #ed143dcc;
     /*border: 3px solid teal;*/
 }
 
 .tecnologias{
     
-    background-color: #00808085;
+    background-color: #008080cc;
 }
 
 .formacion{
-    background-color: #05234285;
+    background-color: #052342cc;
     color: white;
 }
 
