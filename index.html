@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b6d24f73d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body onload="escritura()">
+    
+    <header>
+           <!-- <ul class="name">
+                <li>Javier</li>
+                <li>Elias</li>
+                <li>Jatar</li>-->
+            <ul class="header-text" onclick="location.reload()"><li><a title="Ir a la p&aacute;gina principal" class="logo">Javier Jatar</a></li></ul>
+            <ul class="nav">
+                <!--<li><a id="about_me">About me</a></li>-->
+                <li><a id="portfolio_link">Portafolio</a></li>
+                <li><a id="contact">Contacto</a></li>
+            </ul>
+            <ul class="header-text">97</ul> 
+    </header>
+    <div class="secciones">
+
+        <div id="contenedor_portfolio">
+            <div class="works-done">
+                <div class="portada">
+                    <p class="texto-portada">En desarrollo...</p>
+                </div>
+                <hr>
+                <div>
+                    <p>Proyecto en desarrollo: App web de gestión de facturación para autónomos y pymes</p>
+                    <!--<p>Puesto: Becario prácticas profesionales en <a href="https://www.labotecgames.com/">Labotec Games</a>:<br>-->
+                    -Desarrollo web full stack mediante el uso nativo de los lenguajes:
+                    </p>  
+                    <div class="icons_container">                
+                        <img class="stack_icons" src="stack_icons/php.png" alt="">
+                        <img class="stack_icons" src="stack_icons/html-5.png" alt="">
+                        <img class="stack_icons" src="stack_icons/css-3.png" alt="">
+                        <img class="stack_icons" src="stack_icons/js.png" alt="">
+                    </div>  
+                </div>
+            </div>
+                <div class="works-done">
+                    <div class="portada">
+                        <a href="http://www.km0420.com/"><img src="stack_icons/LOGO-KM0420.png" alt="KM0420"></a>
+                    </div>
+                    <hr>
+                    <div>
+                        <p><a href="http://www.km0420.com/">Km0420 </a>App web de alquiler de inmuebles en Madrid</p>
+                        <p>Puesto: Becario prácticas profesionales en <a href="https://www.labotecgames.com/">Labotec Games</a>:
+                        -Desarrollo web full stack con Yii2 framework:
+                        </p>
+                        <div class="icons_container">
+                            <img class="stack_icons" src="stack_icons/bootstrap.png" alt="">
+                            <img class="stack_icons" src="stack_icons/html-5.png" alt="">
+                            <img class="stack_icons" src="stack_icons/css-3.png" alt="">
+                            <img class="stack_icons" src="stack_icons/js.png" alt="">
+                            <img class="stack_icons" src="stack_icons/php.png" alt="">
+                            <img class="stack_icons" src="stack_icons/yii.png" alt="">
+                        </div>
+                    </div>
+                </div> 
+        </div>
+            <!--<section id="seccion1"></section>-->
+            <div id="contact_section"><div class="back-text"><p><span style="color: #bdf7ce; background-color: black;">'Tarjeta de presentaci&oacute;n'</span>: es una imagen... si quieres puedes guardarla</p><img id="tarjeta" src="23655.jpg" alt=""></div>
+            <form action="https://formspree.io/f/xyyoqjoz" method="POST">
+                <div class="form_container">
+                    <input type="text" name="name" id="" placeholder="Name" autofocus>
+                    <input type="text" name="surname" id="" placeholder="Surname">
+                    <input type="email" name="_replyto" placeholder="Email">
+                    <textarea class="form_input-message" name="message" id="" cols="30" rows="10"></textarea>
+                    <input class="form-submit" type="submit" value="Send">
+                </div>
+            </form>
+
+        </div>
+        <div id="contenedor_texto" onload="escritura()"><span class="typed"></span></div>
+            <div id="cadenas-texto">
+                <p>HOLA, SOY JAVIER :) ...<BR> TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES WEB. ME GUSTA QUE TODO ENCAJE A LA PERFECCIÓN... QUIZÁ EN LA VIDA REAL ESTO NO ES TAN CONVENIENTE, PERO... EN EL DISEÑO Y DESARROLLO DE SITIOS WEB, ES UN PUNTO A FAVOR.</p>
+            </div>
+            <div id="apartados">
+                <div class="servicios container-animation">
+                    <i class="apartados-title animate">Servicios</i>
+                    <div class="sub-menu">
+                        <h4><i style="color:white;">Servicios</i></h4><p class="apartados-text">- Desarrollo y diseño web personalizado<br>- Posicionamiento SEO<br>- Integración de API'S</p>
+                    </div>
+                </div>
+                <div class="valores container-animation">
+                    <i class="fa-solid fa-heart apartados-icons animate apartados-title"></i>
+                    <div class="sub-menu">
+                        <h4><i class="fa-solid fa-heart apartados-icons"></i><br></i></h4><p class="apartados-text">- Compromiso<br>- Coherencia<br>- Paciencia</p>
+                    </div>
+                </div>
+                <div class="tecnologias container-animation">
+                    <i class="fa-solid fa-desktop apartados-icons animate apartados-title"></i>
+                    <div class="sub-menu">
+                    <h4><i class="fa-solid fa-desktop apartados-icons"></i><br></h4>
+                    <p class="apartados-text">HTML<br>CCS<br>JAVASCRIPT<br>BOOTSTRAP<br>PHP<br>YII FRAMEWORK</p>
+                    </div>
+                </div>
+                <div class="formacion container-animation">
+                    <i class="fa-solid fa-graduation-cap apartados-icons animate apartados-title"></i>
+                    <div class="sub-menu">
+                    <h4><i class="fa-solid fa-graduation-cap apartados-icons"></i><br></h4>
+                    <p class="apartados-text">INSTITUTO DE FORMACIÓN PROFESIONAL IFP<br><i class="fa-solid fa-location-dot"></i>&nbspMadrid, España<br>Grado Superior Dessarrollo Aplicaciones Web</p>
+                    </div>
+                <div>
+
+                </div>
+            </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <ul class="social-media">
+            <li><a title="Perfil de Linkedin" target="_blank" href="https://www.linkedin.com/in/javier-jatar-gonzalez-41a255114/?originalSubdomain=es"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><p class="back-text">Todo lo puedes plasmar</p></li>
+            <li><a title="Perfil de Github" target="_blank" href="https://github.com/javierjatar"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </footer> 
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="functions.js"></script>
+    
+
+
+
+</script>
+
+
+</html>
