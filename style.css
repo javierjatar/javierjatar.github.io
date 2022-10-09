@@ -24,6 +24,7 @@ header{
     justify-content: space-between;
     width: 100%;
     margin: auto;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     box-shadow: 0 4px 8px 0 rgb(30 30 29 / 20%), 0 6px 20px 0 rgb(255 255 255 / 19%);
     transition: box-shadow 0.3s;
 }
@@ -203,7 +204,7 @@ form{
     margin: auto;
     padding: 50px 283px 50px 75px;
     height: 100%;
-    background-color: #00000075;
+    /*background-color: #00000075;*/
     overflow: auto;
     /*border-radius: 0 0 10px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -243,12 +244,14 @@ form{
 
 .sub-menu{
     display: none;
+
 }
 
 .animate{
     width: 100%;
     position: absolute;
     left: 100%;
+    cursor: pointer;
 }
 
 .servicios{
@@ -291,15 +294,22 @@ form{
     /*border-top: 1px solid white;
     border-bottom: 1px solid white;*/
     overflow: auto;
-    background-color: #00000075;
+    /*background-color: #00000075;*/
+}
+
+.icons_container{
+    text-align: center;
 }
 
 .works-done{
     /*display: flex;
     justify-content: space-evenly;*/
     height: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 50px;
     color: rgb(255 255 255 / 80%);
+    background-color: #000000b3;;
+    padding: 30px;
+    border-radius: 80px;
     /*border: 1px solid white;*/
 }
 
@@ -307,11 +317,17 @@ form{
     color: #bdf7ce;
 }
 
+.works-done p{
+    margin-bottom: 20px;
+}
+
 .portada{
 
     width: 4rem;
     background-color: white;
     height: 80px;
+    margin: auto;
+    margin-bottom: 20px;
     /*border-radius: 8px;*/
 
 }
@@ -342,7 +358,8 @@ form{
 .typed, .typed-cursor{
    /* font-family: 'Kdam Thmor Pro', sans-serif;
     overflow-wrap: break-word;*/
-    color: aliceblue;
+    color: black;
+    background-color: #ffffff;
 }
 
 .typed-cursor{
@@ -365,7 +382,7 @@ form{
     color: white;
     text-align: center;
     align-self: center;
-    margin-bottom: 20px;
+
 
 }
 
@@ -385,18 +402,22 @@ footer{
     margin: auto;
     border-left: 1px solid #FFF79A;
     border-right: 1px solid #FFF79A;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+
 }
 
 .social-media{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 0;
 }
 
 .social-media > li > p {
     font-size: 0.8rem;
-    color: #841616;;
+    color: black;
+    letter-spacing: 2px;
 }
 
 @media screen and (max-width: 720px){
@@ -414,15 +435,18 @@ footer{
     .typed, .typed-cursor{
         font-size: 10px;
     }
-/*#contenedor_texto{
+#contenedor_texto{
         
-    padding: 25px 50px 25px 50px;
+    background: #ffffff52;
 
-    }*/
+}
+
+#contenedor_portfolio{
+    height: 100%;
+}
 
     #contenedor_texto, #contenedor_portfolio{
         width: 100%;
-        height: 50%;
         padding: 10px;
         border-right: 5px solid #00000080;
         /*font-size: 0.8rem;*/
