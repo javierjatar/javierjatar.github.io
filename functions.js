@@ -60,7 +60,7 @@ function escritura(){
         contenedor_texto.style.display = "block";
         //e.target.removeEventListener(e.type);
     }else{
-    contact_section.style.display = "none";
+    /*contact_section.style.display = "none";*/
     contenedor_texto.style.display = "block";
     const span = document.createElement("span");
     //span.style.class = "typed";
@@ -98,7 +98,7 @@ function escritura(){
 
 
 
-portfolio_link.addEventListener("click", function(){
+/*portfolio_link.addEventListener("click", function(){
     
     apartados.style.display = "none";
     contact_section.style.display = "none";
@@ -123,4 +123,4 @@ contact_link.addEventListener("click", function(e){
 
     e.target.removeEventListener(e.type, escritura);
 
-})
+})*/
