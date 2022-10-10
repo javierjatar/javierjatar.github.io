@@ -123,10 +123,10 @@ header:hover{
     height: 80%;
 }*/
 
-.secciones{
-    background-image: url(backgrounds/javier_background.nef);
+/* .secciones{
+   background-image: url(backgrounds/javier_background.nef);
     background-size: cover;
-    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    background-image: linear-gradient(to right, #434343 0%, black 100%); 
     background-position-y: bottom;
     display: flex;
     align-items: center;
@@ -138,8 +138,8 @@ header:hover{
     /*border: 2px solid white;
     /*border: 1px solid white;
     /*height: 100vh;
-    padding: 0 20px 0 0;*/
-}
+    padding: 0 20px 0 0;
+}*/
 
 #seccion2 div{
     padding-top: 9px;
@@ -208,10 +208,9 @@ form{
 #contenedor_texto{
     width: 100%;
     margin: auto;
-    padding: 50px 283px 50px 75px;
-    height: 100%;
+    padding: 50px 75px 50px 75px;
+    height: auto;
     /*background-color: #00000075;*/
-    overflow: auto;
     /*border-radius: 0 0 10px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-shadow: 2px 4px white;*/
@@ -219,14 +218,13 @@ form{
 }
 
 #apartados{
-    height: 100%;
-    overflow: auto;
-    width: 50%;
+    text-align: center;
 }
 
 .apartados-title{
-    color: white;
+    color: black;
     text-shadow: 2px 2px 4px #ffffff;
+    margin-bottom: 20px;
     /*letter-spacing: 5px;*/
 
 }
@@ -235,25 +233,27 @@ form{
     color: white;
     text-shadow: 2px 2px 4px #000000;
     font-style: italic;
+  
 }
 
 .apartados-icons{
     font-size: x-large;
-    color:white;
+    color:black;
     text-shadow: none;
+    margin-bottom: 20px;
     /*display: none*/
 }
 
-.container-animation{
+/*.container-animation{
     position: relative;
 }
-
+*/
 .sub-menu{
     display: none;
 
 }
 
-.animate{
+/*.animate{
     width: 100%;
     position: absolute;
     left: 100%;
@@ -263,22 +263,15 @@ form{
 .servicios{
     background-color: #000000c7;
 }
-
+*/
 .servicios, .valores, .tecnologias, .formacion{
-    /*border: 3px solid red;
-    /*width: fit-content;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*padding: 0.5rem;*/
-    text-align: center;
-    height: 25%;
-    
+    margin-bottom: 15px;
 }
 
 .valores{
     background-color: #ed143dcc;
-    /*border: 3px solid teal;*/
+}
+    /*border: 3px solid teal;
 }
 
 .tecnologias{
@@ -293,16 +286,16 @@ form{
 
 
 #contenedor_portfolio{
-    /*display: none;*/
+    /*display: none;
     width: 60%;
     height: 100%;
     margin: auto;
     /*border-top: 1px solid white;
-    border-bottom: 1px solid white;*/
+    border-bottom: 1px solid white;
     overflow: auto;
-    /*background-color: #00000075;*/
+    /*background-color: #00000075;
 }
-
+*/
 .icons_container{
     text-align: center;
 }
@@ -365,6 +358,7 @@ form{
 .typed, .typed-cursor{
    /* font-family: 'Kdam Thmor Pro', sans-serif;
     overflow-wrap: break-word;*/
+    line-height: 30px;
     color: black;
     background-color: #ffffff;
 }
