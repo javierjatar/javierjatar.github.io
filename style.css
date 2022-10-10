@@ -54,6 +54,10 @@ header:hover{
 
 }
 
+.secciones{
+    height: 100vh;
+}
+
 .name{
     list-style: none;
     color: #bbc2ff;
@@ -219,13 +223,13 @@ form{
 
 #apartados{
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .apartados-title{
     color: black;
     text-shadow: 2px 2px 4px #ffffff;
-    margin-bottom: 20px;
-    /*letter-spacing: 5px;*/
 
 }
 
@@ -240,7 +244,6 @@ form{
     font-size: x-large;
     color:black;
     text-shadow: none;
-    margin-bottom: 20px;
     /*display: none*/
 }
 
@@ -259,19 +262,19 @@ form{
     left: 100%;
     cursor: pointer;
 }
-
-.servicios{
+*/
+/*.servicios{
     background-color: #000000c7;
 }
 */
 .servicios, .valores, .tecnologias, .formacion{
-    margin-bottom: 15px;
+    background: azure;
+    width: 20%;
+    border-radius: 25px;
 }
-
+/*
 .valores{
     background-color: #ed143dcc;
-}
-    /*border: 3px solid teal;
 }
 
 .tecnologias{
@@ -283,9 +286,9 @@ form{
     background-color: #052342cc;
     color: white;
 }
+*/
 
-
-#contenedor_portfolio{
+/*#contenedor_portfolio{
     /*display: none;
     width: 60%;
     height: 100%;
@@ -303,6 +306,8 @@ form{
 .works-done{
     /*display: flex;
     justify-content: space-evenly;*/
+    margin: auto;
+    width: 50%;
     height: auto;
     margin-bottom: 50px;
     color: rgb(0 0 0);
