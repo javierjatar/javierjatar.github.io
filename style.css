@@ -175,6 +175,7 @@ h2{
     width: 50%;
     height: fit-content;
     border-radius: 30px;
+    margin-top: 10px;
    /* padding-top: 10px;*/
    transition: box-shadow, width 0.1s;
 }
