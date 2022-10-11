@@ -43,7 +43,7 @@ function myMove() {
     }
   }
 */
-window.addEventListener("resize", function(){
+/*window.addEventListener("resize", function(){
     if(screen.width <= 720){
         contact_section.style.display = "block";
         console.log(screen.width);
@@ -51,17 +51,13 @@ window.addEventListener("resize", function(){
         contact_section.style.display = "flex";
         console.log(screen.width);
     }
-})
+})*/
 function escritura(){
     cont++;
     console.log(cont);
-    if(cont >= 2){
-        contact_section.style.display = "none";
-        contenedor_texto.style.display = "block";
-        //e.target.removeEventListener(e.type);
-    }else{
-    contact_section.style.display = "none";
-    contenedor_texto.style.display = "block";
+  
+  /*  contact_section.style.display = "none";
+    contenedor_texto.style.display = "block";*/
     const span = document.createElement("span");
     //span.style.class = "typed";
     document.getElementById('contenedor_texto').appendChild(span);
@@ -84,7 +80,7 @@ function escritura(){
         contentType: 'html', // 'html' o 'null' para texto sin formato
     });
 
-    }
+    
 /*
     myMove();
     /*const collection = document.getElementsByClassName("apartados-icons");
