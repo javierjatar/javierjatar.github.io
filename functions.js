@@ -7,7 +7,7 @@ const portfolio_link = document.getElementById("portfolio_link");
 const apartados = document.getElementById("apartados");
 var cont = 0;
 
-/*function subMenu(){*/
+/*function subMenu(){
     const apartados_title = document.getElementsByClassName("apartados-title");
     const sub_menus = document.getElementsByClassName("sub-menu");
     console.log(sub_menus[0]);
@@ -21,7 +21,7 @@ var cont = 0;
             sub_menus[i].style.display = "block";
         })
     }
-/*}*/
+/*}
 
 function myMove() {
     let id = null;
@@ -42,7 +42,7 @@ function myMove() {
       }
     }
   }
-
+*/
 /*window.addEventListener("resize", function(){
     if(screen.width <= 720){
         contact_section.style.display = "block";
@@ -55,21 +55,17 @@ function myMove() {
 function escritura(){
     cont++;
     console.log(cont);
-    if(cont >= 2){
-        contact_section.style.display = "none";
-        contenedor_texto.style.display = "block";
-        //e.target.removeEventListener(e.type);
-    }else{
-    /*contact_section.style.display = "none";*/
-    contenedor_texto.style.display = "block";
+  
+  /*  contact_section.style.display = "none";
+    contenedor_texto.style.display = "block";*/
     const span = document.createElement("span");
     //span.style.class = "typed";
     document.getElementById('contenedor_texto').appendChild(span);
     document.getElementById('contenedor_texto').firstChild.classList.add("typed");
     const typed = new Typed('.typed', {
-        /*strings: [
+        strings: [
             'HOLA, SOY JAVIER :) ...<BR> TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES WEB. ESTOY UN POCO OBSESIONADO DE QUE TODO ENCAJE A LA PERFECCIÓN... QUIZÁ EN LA VIDA REAL ESTO NO ES TAN CONVENIENTE, PERO... EN EL DISEÑO Y DESARROLLO DE SITIOS WEB, ES UN PUNTO A FAVOR. <br><br><br><div class="servicios">SERVICIOS<br>- Desarrollo y diseño web personalizado<br>- Posicionamiento SEO<br>- Integración de API\'S</div><div class="valores">VALORES<br>- Compromiso<br>- Coherencia<br>- Paciencia</div><div class="tecnologias">TECNOLOGÍAS<br>- HTML<br>- CCS<br>- JAVASCRIPT<br>- BOOTSTRAP<br>- PHP<br>- YII FRAMEWORK</div>',
-        ],*/
+        ],
         stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
         typeSpeed: 30, // Velocidad en mlisegundos para poner una letra,
         startDelay: 1200, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
@@ -84,8 +80,8 @@ function escritura(){
         contentType: 'html', // 'html' o 'null' para texto sin formato
     });
 
-    }
-
+    
+/*
     myMove();
     /*const collection = document.getElementsByClassName("apartados-icons");
     for (let i = 0; i < collection.length; i++) {
@@ -123,4 +119,5 @@ contact_link.addEventListener("click", function(e){
 
     e.target.removeEventListener(e.type, escritura);
 
-})*/
+})
+*/ 
