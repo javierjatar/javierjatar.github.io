@@ -467,9 +467,7 @@ footer{
 @media screen and (max-width: 720px){
 
     .secciones{
-        background-size: cover;
-        background-position-x: 60%;
-        overflow: auto;
+        height: 1100px;
     }
 
     .nav{
@@ -512,6 +510,7 @@ footer{
     #tarjeta{
         height: 100%;
         width: 100%;
+        transition: none;
     }
 
   
