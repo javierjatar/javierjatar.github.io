@@ -55,6 +55,8 @@ h2{
     margin: 50px auto 50px auto;
     text-align: center;
     letter-spacing: 7px;
+    border-radius: 20px;
+    padding: 8px;
 }
 
 .logo{
@@ -178,6 +180,7 @@ h2{
     height: fit-content;
     border-radius: 30px;
     margin-top: 10px;
+    box-shadow: black 1px 1px 10px;
    /* padding-top: 10px;*/
    /*transition: box-shadow, width 0.1s;*/
 }
@@ -224,12 +227,16 @@ form{
 }
 
 .form-submit{
-    color: #bdf7ce !important;;
+    color: #bdf7ce !important;
+    width: 50%;
+    margin: auto;
+    box-shadow: #bdf7ce 1px 1px 10px;
 }
 
 .form-submit:hover{
     background-color: white;
     color:black !important;
+    border: 2px solid black;
     cursor: pointer;
     font-weight: 700;
 }
@@ -263,6 +270,7 @@ form{
     background-color: azure;
     border-radius: 20px;
     padding: 2px 0px;
+    box-shadow: #a78181 1px 1px 5px;
 }
 
 /*.apartados-title:hover{
@@ -281,6 +289,7 @@ form{
     line-height: 30px;
     border-radius: 10px;
     height: 230px;
+    box-shadow: #a78181 1px 1px 5px;
   
 }
 
@@ -354,6 +363,7 @@ form{
     height: auto;
     margin-bottom: 50px;
     color: rgb(0 0 0);
+    box-shadow: black 2px 2px 10px;
     /*background-color: #000000b3;*/
     padding: 30px;
     border-radius: 10px;
@@ -367,6 +377,12 @@ form{
 
 .works-done p{
     margin-bottom: 20px;
+}
+
+.project-link{
+    text-align: center;
+    color: black !important;
+    margin-top: 5px;
 }
 
 .portada{
@@ -406,6 +422,7 @@ form{
 .typed, .typed-cursor{
    /* font-family: 'Kdam Thmor Pro', sans-serif;
     overflow-wrap: break-word;*/
+    padding: 2px 0;
     line-height: 30px;
     color: black;
     background-color: #ffffff;
