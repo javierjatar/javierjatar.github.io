@@ -383,6 +383,7 @@ form{
 
 .works-done a{
     color: #bdf7ce;
+    text-decoration: underline;
 }
 
 .works-done p{
