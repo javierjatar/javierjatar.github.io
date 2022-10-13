@@ -5,7 +5,17 @@
     text-decoration: none;
 }
 
-.love-drops{
+html {
+    scroll-behavior: smooth;
+  }
+
+/*.arrow-up{
+    padding: 0 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+}*/
+
+.drops{
     position: absolute;
     left: 80%;
     font-size: x-large;

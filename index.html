@@ -19,7 +19,7 @@
 </head>
 <body onload="escritura()">
     
-    <header>
+    <header id="top-scroll">
            <!-- <ul class="name">
                 <li>Javier</li>
                 <li>Elias</li>
@@ -27,20 +27,20 @@
             <ul class="header-text" onclick="location.reload()"><li><a title="Ir a la p&aacute;gina principal" class="logo">Javier Jatar</a></li></ul>
             <ul class="nav">
                 <!--<li><a id="about_me">About me</a></li>-->
-                <li><a id="portfolio_link">Portafolio</a></li>
-                <li><a id="contact">Contacto</a></li>
+                <li><a href="#contenedor_portfolio" id="portfolio_link">Portafolio</a></li>
+                <li><a href="#contact_section" id="contact">Contacto</a></li>
             </ul>
             <ul class="header-text">97</ul> 
     </header>
     <div class="secciones">
-        <div title="Dos gotitas" class="love-drops">
+        <div class="drops">
             <i id="male" class="fa-solid fa-droplet"></i>
             <i id="female" class="fa-solid fa-droplet"></i>
         </div>
         
         <div id="contenedor_texto" onload="escritura()"><span class="typed"></span></div>
             <div id="cadenas-texto">
-                <p>Hola, soy Javier :) ...<br><br><br> Técnico superior en desarrollo de aplicaciones web. Me gusta que todo encaje a la perfección. Quizá en la vida real esto no es tan conveniente, pero sabemos que es cuestión de perspectiva, hay cosas que resultan perfectamente imperfectas (en el sentido de lo bonito de lo imperfecto).<br><br>Es una bonita reflexión que quise plasmar (obviando que tengo que rellenar este cuadrado).<br><br>No dejo nada a medias haciendo algo que me gusta, me gusta crear.<br><span class="fin"><i class="fa-regular fa-heart"></i></span></p>
+                <p>Hola, soy Javier :) ...<br><br><br> Desarrollador de aplicaciones web. Me gusta que todo encaje a la perfección. Quizá en la vida real esto no es tan conveniente, pero sabemos que es cuestión de perspectiva, hay cosas que resultan perfectamente imperfectas (en el sentido de lo bonito de lo imperfecto).<br><br>Es una bonita reflexión que quise plasmar (obviando que tengo que rellenar este cuadrado).<br><br>No dejo nada a medias haciendo algo que me gusta, me gusta crear.<br><span class="fin"><i class="fa-regular fa-heart"></i></span></p>
             </div>
             <div id="apartados">
                 <div class="servicios container-animation">
@@ -70,7 +70,7 @@
         </div> 
     </div>
         <div id="contenedor_portfolio">
-            <h2>Proyectos y colaboraciones</h2>
+            <h2>Proyectos y colaboraciones&nbsp;<a href="#top-scroll"><i class="arrow-up fa-solid fa-arrow-up"></i></a></h2>
             <div class="works-done">
                 <div class="portada">
                     <p class="texto-portada">En desarrollo...</p>
@@ -113,7 +113,7 @@
                 </div> 
         </div>
         <div id="contact_section">
-            <h2>Contacto</h2>
+            <h2>Contacto&nbsp;<a href="#top-scroll"><i class="arrow-up fa-solid fa-arrow-up"></i></a></h2>
             <div class="back-text"><p><span style="color: #bdf7ce; background-color: black;">'Tarjeta de presentaci&oacute;n': si quieres, puedes guardarla.</span></p><img id="tarjeta" src="23655.jpg" alt=""></div>
             <form action="https://formspree.io/f/xyyoqjoz" method="POST">
                 <div class="form_container">
