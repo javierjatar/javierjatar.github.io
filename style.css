@@ -501,6 +501,9 @@ footer{
     /*.secciones{
         height: 1100px;
     }*/
+    h2{
+        font-size: 0.7rem;
+    }
 
     .nav{
         font-size: 0.8rem;
