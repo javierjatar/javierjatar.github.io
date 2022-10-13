@@ -62,7 +62,7 @@ h2{
     background: white;
     /* text-align: center; */
     width: 100%;
-    margin: 50px auto 50px auto;
+    margin: 75px auto 50px auto;
     text-align: center;
     letter-spacing: 7px;
     border-radius: 20px;
@@ -517,11 +517,11 @@ footer{
     height: 100%;
 }
 
-    #contenedor_texto, #contenedor_portfolio{
-        width: 100%;
-        padding: 10px;
-        /*font-size: 0.8rem;*/
-    }
+#contenedor_texto, #contenedor_portfolio, #contact_section{
+    width: 100%;
+    padding: 0  10px;
+    /*font-size: 0.8rem;*/
+}
 
 #apartados{
     display: block;
@@ -556,7 +556,6 @@ footer{
 
   #contact_section{
         width: 100%;
-        padding: 0 40px;
     }
 
     .form_container{
