@@ -252,6 +252,10 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
     transform: rotate(2deg);
 }
 
+#barra-punto{
+    color: #FFA500;
+}
+
 .photo-frame::after {
     border: 1px solid rgba(255, 255, 255, 0.44);
     content: '';
